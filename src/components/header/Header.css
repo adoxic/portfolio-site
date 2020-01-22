@@ -1,0 +1,77 @@
+@import './vars.css';
+
+body {
+  margin: 0;
+}
+
+html {
+  background-color: var(--grey1);
+}
+
+.Header {
+  margin: 0 auto;
+  padding: .5em 2em;
+
+  color: var(--grey3);
+
+  font-family: var(--body-text);
+  
+  h1 {
+    z-index: 1;
+
+    font-family: var(--display);
+    font-size: 2.5em;
+  }
+
+  h1::before {
+    content: "";
+    z-index: -1;
+
+    position: absolute;
+    top: 0;
+    left: -10vw;
+
+    height: 35vh;
+    width: 43vw;
+
+    background: var(--grey4);
+    -webkit-box-shadow: 4px 0px 0px 0px var(--green); 
+    box-shadow: 4px 0px 0px 0px var(--green);
+    transform: skew(-20deg);
+  }
+
+  div::before {
+    content: "";
+    z-index: -2;
+
+    position: absolute;
+    top: 0;
+    right: -5vw;
+
+    height: 28vh;
+    width: 100vw;
+
+    background: var(--grey2);
+    transform: skew(-20deg);
+  }
+  p {
+    border-radius: .1em;
+    padding: .2em;
+    margin: .4em;
+    margin-top: .8em;
+
+    font-family: var(--body-text);
+    font-size: .9em;
+
+  }
+  div {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    p:hover {
+      background-color: var(--grey4);
+      color: var(--green);
+    }
+  }
+}
