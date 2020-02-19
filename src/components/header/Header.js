@@ -4,9 +4,12 @@ import styles from './Header.css';
 
 const Header = () => {
   const time = 2000;
+  const x = 2;
   const props = useSpring({ opacity: 1,
     config: { duration: time },
-    from: { opacity: 0 } });
+    from: { opacity: .7, transform: 'translate(-5em)' },
+    to: { opacity: 1, transform: 'translate(-0.5em)' }
+  });
   return (
     <header className={styles.Header}>
       <animated.h1 style={props}>Maeve Griffin</animated.h1>
