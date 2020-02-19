@@ -31,7 +31,7 @@ html {
     top: 0;
     left: -10vw;
 
-    height: 35vh;
+    height: 25vh;
     width: 43vw;
 
     background: var(--grey4);
@@ -46,31 +46,44 @@ html {
 
     position: absolute;
     top: 0;
-    right: -5vw;
+    right: 0;
 
-    height: 28vh;
+    height: 22vh;
     width: 100vw;
 
     background: var(--grey2);
-    transform: skew(-20deg);
   }
   p {
     border-radius: .1em;
     padding: .2em;
-    margin: .4em;
-    margin-top: .8em;
+    margin: .1em;
+    margin-top: .6em;
 
     font-family: var(--body-text);
-    font-size: .9em;
+    font-size: .8em;
+  }
+
+  p:first-child {
+    padding-left: 5em;
+    width: 63vw;
+  }
+
+  p:nth-child(2) {
+    padding-left: 4em;
 
   }
+
+  p:nth-child(3) {
+    padding-left: 3em;
+
+  }
+
   div {
     position: absolute;
     top: 0;
     right: 0;
 
     p:hover {
-      background-color: var(--grey4);
       color: var(--green);
     }
   }
